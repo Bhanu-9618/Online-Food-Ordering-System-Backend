@@ -31,10 +31,10 @@ public class CustomerEntity {
     private String contactno;
 
     public CustomerEntity(String name, String email, String password, String address, String contactno) {
-        this.address = address;
-        this.contactno = contactno;
         this.name = name;
         this.email = email;
         this.password = password;
+        this.address = address;
+        this.contactno = contactno;
     }
 }

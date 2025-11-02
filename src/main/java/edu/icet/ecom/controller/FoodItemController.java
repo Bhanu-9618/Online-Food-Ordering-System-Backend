@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Food")
+@RequestMapping("/food")
 public class FoodItemController {
 
     @Autowired
     FoodItemService foodItemService;
 
-    @GetMapping("/food")
+    @GetMapping("/viewfood")
     public List<FoodItemDto> viewFoodTable(){
        return foodItemService.viewFoodTable();
     }

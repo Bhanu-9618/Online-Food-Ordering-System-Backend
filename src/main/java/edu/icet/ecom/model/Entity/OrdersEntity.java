@@ -13,7 +13,7 @@ public class OrdersEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long OrderNo;
+    private Long cartid;
 
     @Column(nullable = false , unique = true)
     private Long orderId;
@@ -37,4 +37,15 @@ public class OrdersEntity {
 
     @Column(nullable = false)
     private Double total;
+
+    public OrdersEntity(Long itemcode, Long orderId, Long custid, String itemDescription, int qtyOnHand, Double unitPrice, Double total) {
+
+    this.foodItemsEntity.setItemcode(itemcode);
+    this.itemDescription = itemDescription;
+    this.unitPrice = unitPrice;
+    this.qtyOnHand = qtyOnHand;
+    this.total = total;
+    this.orderId = orderId;
+    this.customerEntity.setCustid(custid);
+    }
 }

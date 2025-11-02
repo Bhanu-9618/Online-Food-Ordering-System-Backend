@@ -5,7 +5,6 @@ import edu.icet.ecom.model.Entity.FoodItemsEntity;
 import edu.icet.ecom.repository.FoodItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,8 +23,8 @@ public class FoodItemService {
                             foodItemsEntity.getItemcode(),
                             foodItemsEntity.getDescription(),
                             foodItemsEntity.getPackSize(),
-                            foodItemsEntity.getUnitPrice(),
-                            foodItemsEntity.getQtyOnHand()
+                            foodItemsEntity.getQtyOnHand(),
+                            foodItemsEntity.getUnitPrice()
                     )
             );
 

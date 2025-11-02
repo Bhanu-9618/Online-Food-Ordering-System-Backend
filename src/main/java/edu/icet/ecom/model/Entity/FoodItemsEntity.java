@@ -19,7 +19,7 @@ public class FoodItemsEntity {
     private String description;
 
     @Column(nullable = false)
-    private int packSize;
+    private String packSize;
 
     @Column(nullable = false)
     private Double unitPrice;
